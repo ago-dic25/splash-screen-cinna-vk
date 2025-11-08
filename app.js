@@ -10,9 +10,16 @@ export default function App() {
     }, 2000);
   }, []);
 
+  SplashScreen.setOptions({
+  duration: 1000,
+  fade: true,
+  });
+
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Aqui puedes agregar un componente de React (puedes crear un componente separado o mover el codigo creado en clase anterior e importarlo en la sección de arriba) </Text>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <Text>Aqui puedes agregar un componente de React </Text>
+      <Text>(puedes crear un componente separado o mover el codigo creado en clase anterior</Text>
+      <Text>importarlo en la sección de arriba) </Text>
     </View>
   );
 }
